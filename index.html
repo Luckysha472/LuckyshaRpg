@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- navbar -->
+<div>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand ml-5">
+              <a class="navbar-item" href="#"><strong>Markit</strong></a>
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a href="index.html" class="navbar-item ">Home</a>
+                <a class="navbar-item">Documentation</a>
+                <input class="navbarSearch input mr-5 ml-5" type="search" placeholder="Search... ">
+              </div>
+          
+              <div class="navbar-end mr-5">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link"> <i class="fa-solid fa-user fa-2x"></i> </a>
+                      <div class="navbar-dropdown">
+                      <a href="login.html" class="navbar-item">Login</a>
+                      <a href="signup.html" class="navbar-item">Sign Up</a>
+                    </div>
+                  </div>
+                    <a href="wishlist.html" class="navbar-item mr-3"><i class="fa-regular fa-heart fa-2x"></i></a>
+                    <a href="cart.html" class="navbar-item mr-3"><i class="fa-brands fa-opencart fa-2x"></i></a>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+   
+      <!-- carousel -->
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <a href="https://www.purplle.com/search?q=nybae"><img class="carousel-img" src="caro1.jpg" style="width:100%"></a>
+        </div>
+
+        <div class="mySlides fade">
+          <a href="https://www.flipkart.com/6bo/b5g/~cs-ckhu64dk3p/pr?sid=6bo,b5g&collection-tab-name=Intel+Core+Ultra&pageCriteria=default&OCMPID=Laptops_Intelcoreultra"><img class="carousel-img" src="caro2.jpg" style="width:100%"></a>
+        </div>
+        
+        <div class="mySlides fade">
+          <a href="https://www.flipkart.com/realme-c65-5g-store?param=27849"><img class="carousel-img" src="caro3.jpg" style="width:100%"></a>
+        </div>
+        
+        <div class="mySlides fade">
+          <a href="https://www.purplle.com/promo/buy-more-save-more-makeup-combo-kits"><img class="carousel-img" src="caro4.jpg" style="width:100%"></a>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+
+        
+<!-- card -->
+<div class="gadgets-card">
+  <button class="hover1" onclick="prev()"><i class="fa-solid fa-arrow-left fa-2x" style="color: #63E6BE;"></i></button>
+  <div class="child-card card-show fade"> 
+    <img class="card-img" src="./gadgets/camera.jpg" alt="camera">
+    <h1>Cameras</h1>
+  </div>
+  <div class="child-card card-show fade">
+    <img class="card-img" src="./gadgets/earbuds.jpg" alt="earbud"> 
+    <h1 >Earbuds</h1>
+  </div>
+  <div class="child-card card-show fade"> 
+    <img class="card-img" src="./gadgets/gaminglap.jpg" alt="gaming-Laptop">
+    <h1>Gaming-Laptops</h1>
+  </div> 
+  <div class="child-card card-show fade">
+    <img class="card-img" src="./gadgets/keyboard.jpg" alt="Keyboard"> 
+    <h1>Keyboard</h1>
+  </div> 
+  <div class="child-card card-show fade">
+    <img class="card-img" src="./gadgets/laptop.jpg" alt="Laptop"> 
+    <h1>Laptop</h1>
+  </div>
+  <div class="child-card card-hide fade">
+    <img class="card-img" src="./gadgets/phone.jpg" alt="Phone"> 
+    <h1>Mobiles</h1>
+  </div>
+  <div class="child-card card-hide fade">
+    <img class="card-img" src="./gadgets/speaker.jpg" alt="Speaker"> 
+    <h1>Home Audio</h1>
+  </div>
+  <div class="child-card card-hide fade">
+    <img class="card-img" src="./gadgets/tab.jpg" alt="Tab"> 
+    <h1>Tablets</h1>
+  </div>
+  <div class="child-card card-hide fade">
+    <img class="card-img" src="./gadgets/tv.jpg" alt="Tv"> 
+    <h1>Televisions</h1>
+  </div>
+  <div class="child-card card-hide fade">
+    <img class="card-img" src="./gadgets/watch.jpg" alt="Watch"> 
+    <h1>Smart Watches</h1>
+  </div> 
+<button class="hover1"  onclick="next()"><i class="fa-solid fa-arrow-right fa-2x" style="color: #63E6BE;"></i></button>
+</div>
+<!-- another crosel -->
+<div class="cloth-card">
+  <div class="clothing card">
+    <div>
+    <div class="shopping">
+      <div><img class="cloth-img"  src="./clothing/womencloth.jpg" alt="women"><h2>Women's clothing</h2></div>
+      <div><img  class="cloth-img"  src="clothing/mencloth.jpg" alt="men"><h2>Men's clothing</h2></div>
+    </div>
+    <div class="shopping">
+      <div><img class="cloth-img" src="clothing/kidscloth.jpg" alt="kids"><h2>kid's clothing</h2></div>
+      <div><img class="cloth-img" src="clothing/bag.jpg" alt="kids"><h2>Hand Bag</h2></div>
+    </div>
+  </div>
+</div>
+<div class="clothing card">
+  <div>
+    <h2 style="font-size: 1.3rem;"><strong>Continue shopping for</strong></h2>
+  <div class="shopping">
+    <div><img class="cloth-img2"  src="./clothing/girlscloth.jpg" alt="women"></div>
+    <div><img  class="cloth-img2"  src="clothing/boysshoe.jpg" alt="men"></div>
+  </div>
+  <div class="shopping">
+    <div><img class="cloth-img2" src="clothing/girlsshoe.jpg" alt="kids"></div>
+    <div><img class="cloth-img2" src="clothing/boyscloth.jpg" alt="kids"></div>
+  </div>
+</div>
+</div>
+
+<div class="clothing card">
+  <div>
+    <h2 style="font-size: 1.3rem;"><strong>Keep shopping for</strong></h2>
+  <div class="shopping">
+    <div><img class="cloth-img2"  src="./clothing/causualwear.jpg" alt="women"></div>
+    <div><img  class="cloth-img2"  src="clothing/Ethnicwear.jpg" alt="men"></div>
+  </div>
+  <div class="shopping">
+    <div><img class="cloth-img2" src="clothing/westernwear.jpg" alt="kids"></div>
+    <div><img class="cloth-img2" src="clothing/formalwear.jpg" alt="kids"></div>
+  </div>
+</div>
+</div>
+<div class="deals">
+    <div class="percent-img">
+     <div><img class="percent-img2" src="clothing/percent.jpg" alt="percent"><h2>Deal of the Day</h2></div>
+    <div><img class="percent-img2" src="clothing/percent2.jpg" alt="percent2"><h2>Lightening Deal</h2></div>
+  </div>
+  <div style="margin-top: 40px;"><iframe width="300" height="235" src="https://www.youtube.com/embed/FaR4WWhVcbE?autoplay=1&playlist=FaR4WWhVcbE" title="Amazon Product Video Example | Luggage Case, Leather Purse, Jewelry, Electronics Commercial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+ </div>
+    </div>
+    <!-- card (pink) -->
+    <div class="beauty-card">
+      <button class="hover1" onclick="card2Prev()"><i class="fa-solid fa-arrow-left fa-2x" style="color: #63E6BE;"></i></button>
+      <div class="child-card2 card-show fade"> 
+        <img class="card-img" src="card2/shampo.jpg" alt="camera">
+        <h1>Conditioner</h1>
+      </div>
+      <div class="child-card2 card-show fade">
+        <img class="card-img" src="card2/vaseline.jpg" alt="earbud"> 
+        <h1 >Body Lotions</h1>
+      </div>
+      <div class="child-card2 card-show fade"> 
+        <img class="card-img" src="card2/mascara.jpg" alt="gaming-Laptop">
+        <h1>Combos</h1>
+      </div> 
+      <div class="child-card2 card-show fade">
+        <img class="card-img" src="card2/facewash.jpg" alt="Keyboard"> 
+        <h1>Face Wash</h1>
+      </div> 
+      <div class="child-card2 card-show fade">
+        <img class="card-img" src="card2/dotkey.jpg" alt="Laptop"> 
+        <h1>Sunscreen</h1>
+      </div>
+      <div class="child-card2 card-hide fade">
+        <img class="card-img" src="card2/cureley.jpg" alt="Phone"> 
+        <h1>Hair Growth & Repair</h1>
+      </div>
+      <div class="child-card2 card-hide fade">
+        <img class="card-img" src="card2/shamppo2.jpg" alt="Speaker"> 
+        <h1>shampoo</h1>
+      </div>
+      <div class="child-card2 card-hide fade">
+        <img class="card-img" src="card2/nivea.jpg" alt="Tab"> 
+        <h1>Moisturizer</h1>
+      </div>
+      <div class="child-card2 card-hide fade">
+        <img class="card-img" src="card2/lux.jpg" alt="Tv"> 
+        <h1>Shower Gel</h1>
+      </div>
+      <div class="child-card2 card-hide fade">
+        <img class="card-img" src="card2/dimple.jpg" alt="Watch"> 
+        <h1>Sports & Fitness</h1>
+      </div> 
+    <button class="hover1"  onclick="card2Next()"><i class="fa-solid fa-arrow-right fa-2x" style="color: #63E6BE;"></i></button>
+    </div>
+    <!-- ...card.. -->
+  
+    <!-- end -->
+    <div class="cloth-card">
+      <div class="clothing card">
+        <div>
+          <h2 style="font-size: 1.3rem;"><strong>Top searches</strong></h2>
+        <div class="shopping">
+          <div><img class="cloth-img"  src="skin/skin1.jpg" alt="women"><h2>Even skin Tone</h2></div>
+          <div><img  class="cloth-img"  src="skin/skin2.jpg" alt="men"><h2>Skin Brightening</h2></div>
+        </div>
+        <div class="shopping">
+          <div><img class="cloth-img" src="skin/skin3.jpg" alt="kids"><h2>Youthful Glow</h2></div>
+          <div><img class="cloth-img" src="skin/skin4.jpg" alt="kids"><h2>Clean Pores</h2></div>
+        </div>
+      </div>
+    </div>
+    <div class="clothing card">
+      <div>
+        <h2 style="font-size: 1.3rem;"><strong>Explore more...</strong></h2>
+      <div class="shopping">
+        <div><img class="cloth-img2"  src="skin/shoe1.jpg" alt="women"></div>
+        <div><img  class="cloth-img2"  src="skin/jewel.jpg" alt="men"></div>
+      </div>
+      <div class="shopping">
+        <div><img class="cloth-img2" src="skin/bella.jpg" alt="kids"></div>
+        <div><img class="cloth-img2" src="skin/watch.jpg" alt="kids"></div>
+      </div>
+    </div>
+    </div>
+    
+    <div class="clothing card">
+      <div>
+        <h2 style="font-size: 1.3rem;"><strong>Budget Buy</strong></h2>
+      <div class="shopping">
+        <div><img class="cloth-img2"  src="skin/men1.jpg" alt="women"></div>
+        <div><img  class="cloth-img2"  src="skin/men2.jpg" alt="men"></div>
+      </div>
+      <div class="shopping">
+        <div><img class="cloth-img2" src="skin/men3.jpg" alt="kids"></div>
+        <div><img class="cloth-img2" src="skin/men4.jpg" alt="kids"></div>
+      </div>
+    </div>
+    </div>
+    <div class="deals">
+        <div class="percent-img">
+         <div><img class="percent-img2" src="clothing/percent.jpg" alt="percent"><h2>Deal of the Day</h2></div>
+        <div><img class="percent-img2" src="clothing/percent2.jpg" alt="percent2"><h2>Lightening Deal</h2></div>
+      </div>
+      <div style="margin-top: 40px;"><iframe width="300" height="230" src="https://www.youtube.com/embed/9-jve13EcF8?autoplay=1&loop=1" title="🌟 Introducing: I-BEAUTY by Nykaa🌟" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+     </div>
+        </div>
+<!-- end... -->
+<script src="index.js"></script>
+</body>
+</html>
